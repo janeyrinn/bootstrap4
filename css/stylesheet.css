@@ -2,7 +2,20 @@ body {
     font-family: 'Raleway', sans-serif;
 }
 
-.alert-container {}
+/*Alert Banner*/
+
+.alert-container .col-12 {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.site-wide-alert {
+    border-radius: 0;
+    margin-bottom: 0;
+    padding: 5px 15px;
+    background-color: #ffc107;
+    border-color: #ffc107;
+}
 
 .callout-container {
     height: 100vh;
@@ -32,7 +45,46 @@ body {
 
 .quotes-container {}
 
+/*Features*/
+
 .features-container {}
+
+.feature {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.feature i { /* this class will target feat 1,2 & 3 size */
+    margin-bottom: 20px;
+    font-size: 45px;
+    line-height:45px;
+}
+
+.feature .btn { /* Targets 3 buttons in the features section*/
+    background-color: white;
+    border-color: white;
+    border-radius: 15px;
+    min-width: 100px;
+    font-weight: bold;
+    margin-top: 10px;
+    color: #f16306;
+}
+
+/* Page headers */
+
+.page-header {
+    margin-bottom: 0;
+    border-bottom: 0;
+    text-align: center;
+}
+
+.page-header h2 {
+    margin-top: 0;
+}
+
+.quotes .page-header {
+    margin-bottom: 25px;
+}
 
 /*Block dividers*/
 
@@ -40,6 +92,7 @@ body {
     width: 70px;
     height: 5px;
     border: 0;
+    background-color: #444;
 }
 
 .block-divider--orange {
@@ -48,6 +101,56 @@ body {
 
 .block-divider--short {
     width: 35px;
+}
+
+.block-divider--white {
+    background-color: white;
+}
+
+/* Content Containers */
+
+.content-container {
+    padding-top: 75px;
+    padding-bottom: 75px;
+}
+
+.container-wrapper {
+
+}
+
+.container-wrapper--red {
+    background-color: #f16306;
+    color: white;
+}
+
+/*Nav Bar*/
+
+.navalert-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding-left: 0;
+    padding-right: 0;
+    z-index: 1;
+}
+
+.navbar { /* overriding default bootstrap settings*/
+    margin-bottom: 0;
+    border: 0;
+    width: 100%;
+    background-color: rgba(0,0,0,0.25);
+}
+
+.navbar .navbar-toggler {
+    border: 0;
+}
+
+.navbar-brand {
+    font-weight: bold;
+}
+
+.navbar .navbar-nav a {
+    font-weight: bold;
 }
 
 /*Jumbotron*/
@@ -97,3 +200,4 @@ body {
     background-color: #f16306;
     border-color: #f16306;
 }
+
